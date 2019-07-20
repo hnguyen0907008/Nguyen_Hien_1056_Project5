@@ -1,0 +1,29 @@
+.hidden
+{
+	display: none;
+}
+
+body
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+.container
+{
+	margin: 0 auto;
+	background-color: #efefef;
+	max-width: 1200px;
+}
+
+.box
+{
+	background-color: black;
+	border: 1px solid #a1cbc9;
+}
+
+#burgerCon
+{
+	display: none;
+}
