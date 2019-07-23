@@ -3,6 +3,7 @@
 	display: none;
 }
 
+
 body
 {
 	font-family: Helvetica, Arial, sans-serif;
@@ -10,20 +11,204 @@ body
 	color: white;
 }
 
+header
+{
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	background-color: #acacac;
+	margin-bottom: 30px;
+}
+
+h2, h3
+{
+	text-align: center;
+}
+
 .container
 {
 	margin: 0 auto;
 	background-color: #efefef;
-	max-width: 1200px;
 }
 
 .box
 {
 	background-color: black;
-	border: 1px solid #a1cbc9;
+	border: 2px solid #a1cbc9;
+	border-radius: 10px;
 }
 
+.nav
+{
+	margin-left: auto;
+	width: 40px;
+	height: 40px;
+}
+
+.logo
+{
+	width: 180px;
+	height: 158px;
+	margin: 0 auto;
+}
+
+.contactPage
+{
+	max-width: 1200px;
+}
+
+.contactInfo1, .contactForm
+{
+	height: 494px;
+}
+
+.contactInfo2
+{
+	height: 410px;
+}
+
+/*Nav burger*/
 #burgerCon
 {
 	display: none;
+	width: 100%;
+	background-color: #efefef;
+	width: 100%;
+	top: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: absolute;
+}
+
+#burgerCon li
+{
+	text-align: center; 
+	padding: 10px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.show-nav
+{
+	display: block !important;
+}
+/*End nav burger*/
+
+footer
+{
+	background-color: #acacac;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.LogoFooter
+{
+	width: 100px;
+	height: 89px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.FooterNav
+{
+	width: 100px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+/*Tablet Version*/
+@media screen and (min-width: 768px){
+	.infoForm
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.contactInfo1, .contactForm
+	{
+		width:50%;
+	}
+
+	.contactInfo2
+	{
+		margin-top: 30px;
+		height: 260px;
+	}
+
+	.FooterNav
+	{
+		width: 100%;
+		height: 40px;
+	}
+}
+
+/*Desktop Version*/
+@media screen and (min-width: 1024px){
+	.logo
+	{
+		order: -1;
+	}
+
+	.nav, .logo
+	{
+		display: none;
+	}
+
+	#burgerCon
+	{
+		display: none;
+	}
+
+	#desktopNav 
+	{
+		display: inline;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	#desktopNav ul li
+	{
+		display: inline-block;
+	}
+
+	#desktopNav ul li a
+	{
+		margin-top: 50px;
+		text-decoration: none;
+	}
+
+	.desktopLogo
+	{
+		width: 180px;
+		height: 158px;
+	}
+
+	.contactPage
+	{
+		margin: 0 auto;
+	}
+
+	footer
+	{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.FooterNav
+	{
+		width: 995px;
+		height: 40px;
+		order: -1;
+		margin-top: 20px; 
+	}
+
+	.LogoFooter
+	{
+		
+	}
 }

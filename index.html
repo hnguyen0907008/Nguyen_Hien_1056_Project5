@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -10,17 +10,14 @@
 </head>
 <body>
 	<!--Start everything with mobile first from now on-->
-	<main class="container">
+	<main id="container">
 		<header id="mainHeader">
-			<div class="box logo">
-				<h2>Logo</h2>
-			</div>
-
 			<div class="box nav">
 				<h2>Nav</h2>
 			</div>
+
 			<!--dropdown nav element-->
-			<nav id="burgerCon" class="show-mobile-nav">
+			<nav id="burgerCon" class="show-nav">
 			<h2 class="hidden">Nav Toggle</h2>
 				<ul id="burgerMenu">
 					<li><a href="#">Home</a></li>
@@ -32,16 +29,35 @@
 				</ul>
 			</nav>
 			<!--end dropdown nav-->
+
+			<nav id="desktopNav" class="hidden">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Projects & Events</a></li>
+					<li><div class="box desktopLogo"><h2>Logo</h2></div></li>
+					<li><a href="#">Newsletters</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="box logo">
+				<h2>Logo</h2>
+			</div>
+
 		</header>
 
 		<section class="contactPage">
 			<h2 class="hidden">Contact Page</h2>
-			<div class="box contactInfo1">
-				<h3>Contact Information</h3>
-			</div>
+			<div class="infoForm">
+				<div class="box contactInfo1">
+					<h3>Contact Information</h3>
+				</div>
 
-			<div class="box contactForm">
-				<h3>Email Form</h3>
+				<div class="box contactForm">
+					<h3>Email Form</h3>
+				</div>
 			</div>
 
 			<div class="box contactInfo2">
